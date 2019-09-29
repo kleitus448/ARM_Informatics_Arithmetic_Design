@@ -6,13 +6,16 @@ import javafx.print.Printer;
 import javafx.print.PrinterJob;
 import javafx.scene.Group;
 import javafx.scene.Node;
+import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.layout.FlowPane;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.Region;
 import javafx.scene.web.HTMLEditor;
+import javafx.stage.Stage;
 import org.fxmisc.richtext.InlineCssTextArea;
+import org.fxmisc.richtext.model.StyleSpan;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -40,6 +43,7 @@ public class Controller {
     @FXML private MenuItem hyperLink;
 
     @FXML private InlineCssTextArea algTextArea;
+    @FXML private String hyperLinkStyle;
 
     private int tabCounter = 0;
     private int rowCounter = 0;
@@ -182,10 +186,8 @@ public class Controller {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        algTextArea = new InlineCssTextArea();
-        algTextArea.setOnMouseReleased(event -> {
-            algTextArea.getStyleRangeAtPosition(algTextArea.getCaretPosition());
-        });
+        hyperLinkStyle = "-fx-fill: blue; -fx-underline: true";
+
         ContextMenu contextMenu = new ContextMenu();
         MenuItem menuItem = new MenuItem("Make Hyperlink");
         menuItem.setOnAction(event -> onHyperLink());
@@ -238,7 +240,7 @@ public class Controller {
         System.out.println(algTextArea.getSelectedText());
         algTextArea.setStyle(   algTextArea.getSelection().getStart(),
                                 algTextArea.getSelection().getEnd(),
-                                "-fx-fill: blue; -fx-underline: true"   );
+                                hyperLinkStyle                          );
         algTextArea.setStyle(   algTextArea.getSelection().getEnd(),
                                 algTextArea.getLength(),
                                 ""                                      );
