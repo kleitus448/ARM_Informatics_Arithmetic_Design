@@ -25,7 +25,6 @@ public class Controller {
     @FXML private Tab reqTab;
     @FXML private Tab testTab;
     @FXML private Tab algTab;
-    @FXML private TextArea algText;
 
     //SOLUTION TAB
 
@@ -39,6 +38,8 @@ public class Controller {
     @FXML private Button addStep;
     @FXML private FlowPane stepPane;
     @FXML private MenuItem hyperLink;
+
+    @FXML private InlineCssTextArea algTextArea;
 
     private int tabCounter = 0;
     private int rowCounter = 0;
@@ -181,6 +182,16 @@ public class Controller {
         } catch (IOException e) {
             e.printStackTrace();
         }
+        algTextArea = new InlineCssTextArea();
+        algTextArea.setOnMouseReleased(event -> {
+            algTextArea.getStyleRangeAtPosition(algTextArea.getCaretPosition());
+        });
+        ContextMenu contextMenu = new ContextMenu();
+        MenuItem menuItem = new MenuItem("Make Hyperlink");
+        menuItem.setOnAction(event -> onHyperLink());
+        contextMenu.getItems().add(menuItem);
+        algTextArea.setContextMenu(contextMenu);
+        stepPane.getChildren().add(algTextArea);
         //stepPane.getChildren().remove(addStep);
         //algPane.getChildren().add(addStep);
     }
@@ -223,11 +234,15 @@ public class Controller {
     }
 
     @FXML
-    void onHyperLink() {
-        System.out.println(algText.getSelectedText());
-        InlineCssTextArea textArea = new InlineCssTextArea();
-        stepPane.getChildren().add(textArea);
-        System.out.println(textArea.getSelectedText());
-        System.out.println(textArea.getSelectionBounds());
+    private void onHyperLink() {
+        System.out.println(algTextArea.getSelectedText());
+        algTextArea.setStyle(   algTextArea.getSelection().getStart(),
+                                algTextArea.getSelection().getEnd(),
+                                "-fx-fill: blue; -fx-underline: true"   );
+        algTextArea.setStyle(   algTextArea.getSelection().getEnd(),
+                                algTextArea.getLength(),
+                                ""                                      );
+        /*System.out.println(textArea.getSelectedText());
+        System.out.println(textArea.getSelectionBounds());*/
     }
 }
