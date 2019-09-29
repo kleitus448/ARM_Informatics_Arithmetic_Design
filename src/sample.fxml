@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.TextFlow?>
+
+<TabPane fx:id="tabPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+  <tabs>
+    <Tab fx:id="reqTab" text="Постановка задачи">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Label layoutX="14.0" layoutY="10.0" prefHeight="128.0" prefWidth="573.0" text="Дано арифметическое выражение, состоящее из 3-х арифметических операций. Каждый операнд представлен в своей системе счисления. Каждая операция имеет свою систему счисления (перед операцией необходимо перевести каждый операнд в соответствующую систему счисления, определяемую системой счисления операции). Формат арифметического выражения задаётся следующей формулой: " wrapText="true">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="180.0" prefHeight="177.0" prefWidth="573.0" text="где A - первый операнд, SA - система счисления (далее СС) 1-го операнда, plus - СС операции сложения, B - второй операнд, SB - СС 2-го операнда, 2 - двоичная система счисления, C - третий операнд в двоичной системе, D - четвёртый операнд в двоичной системе, [+] - операция сложения, [-] - операция вычитания, [/] - операция деления, X - общий результат, SX - СС общего результата, ==&gt; означает, что полученный в двоичной СС результат следует представить в формате X. Операнды и системы счисления выбираются в соответствии с вариантом задания." wrapText="true">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="43.0" fitWidth="452.0" layoutX="100.0" layoutY="129.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Formula.PNG" />
+                     </image>
+                  </ImageView>
+                  <TextFlow layoutX="173.0" layoutY="138.0" prefHeight="200.0" prefWidth="200.0" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab fx:id="testTab" text="Тестовый опрос">
+         <content>
+            <AnchorPane>
+               <children>
+                  <Group fx:id="answerGroup" layoutX="127.0" layoutY="110.0">
+                     <children>
+                        <GridPane vgap="10.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                        </GridPane>
+                     </children></Group>
+                  <Button fx:id="nextTestButton" layoutX="327.0" layoutY="316.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="115.0" text="Далее" />
+                  <Button fx:id="backTestButton" layoutX="202.0" layoutY="316.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="116.0" text="Назад" />
+                  <Label fx:id="questionLabel" layoutX="127.0" layoutY="84.0" text="Вопрос" />
+                  <Button fx:id="endTestButton" layoutX="455.0" layoutY="316.0" mnemonicParsing="false" onAction="#onEndTestButton" prefHeight="25.0" prefWidth="116.0" text="Конец" />
+               </children>
+            </AnchorPane>
+         </content>
+    </Tab>
+      <Tab fx:id="algTab" text="Алгоритм">
+         <content>
+            <ScrollPane fx:id="algPane" prefHeight="333.0" prefWidth="554.0">
+               <content>
+                  <FlowPane fx:id="stepPane" prefHeight="371.0" prefWidth="265.0" vgap="10.0">
+                     <children>
+                        <Button fx:id="addStep" mnemonicParsing="false" text="+">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Button>
+                        <TextArea fx:id="algText" prefHeight="200.0" prefWidth="200.0">
+                           <contextMenu>
+                              <ContextMenu>
+                                <items>
+                                  <MenuItem fx:id="hyperLink" mnemonicParsing="false" onAction="#onHyperLink" text="Сделать гиперссылку" />
+                                </items>
+                              </ContextMenu>
+                           </contextMenu>
+                        </TextArea>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets left="50.0" top="50.0" />
+                     </padding>
+                  </FlowPane>
+               </content>
+            </ScrollPane>
+         </content></Tab>
+  </tabs>
+</TabPane>

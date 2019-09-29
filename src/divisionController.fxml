@@ -1,0 +1,691 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" onScroll="#onScroll" prefHeight="187.0" prefWidth="634.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="additionController">
+   <children>
+      <Label layoutX="27.0" layoutY="18.0" text="N =" AnchorPane.leftAnchor="27.0" />
+      <TextField fx:id="numberTextEdit6" layoutX="54.0" layoutY="14.0" maxHeight="-Infinity" maxWidth="-Infinity" onKeyReleased="#onNumberTextEdit" prefHeight="25.0" prefWidth="30.0">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets right="5.0" />
+         </padding>
+      </TextField>
+      <GridPane layoutX="20.0" layoutY="53.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <TextField fx:id="numberTextEdit" maxHeight="-Infinity" maxWidth="-Infinity" onKeyReleased="#onNumberTextEdit" prefHeight="25.0" prefWidth="30.0" GridPane.columnIndex="1">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets right="5.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets left="2.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="numberTextEdit2" maxHeight="-Infinity" maxWidth="-Infinity" onKeyReleased="#onNumberTextEdit" prefHeight="25.0" prefWidth="30.0" GridPane.columnIndex="2">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets right="5.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets left="2.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="numberTextEdit3" maxHeight="-Infinity" maxWidth="-Infinity" onKeyReleased="#onNumberTextEdit" prefHeight="25.0" prefWidth="30.0" GridPane.columnIndex="3">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets right="5.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets left="2.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="numberTextEdit4" maxHeight="-Infinity" maxWidth="-Infinity" onKeyReleased="#onNumberTextEdit" prefHeight="25.0" prefWidth="30.0" GridPane.columnIndex="4">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets right="5.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets left="2.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="numberTextEdit41" maxHeight="-Infinity" maxWidth="-Infinity" onKeyReleased="#onNumberTextEdit" prefHeight="25.0" prefWidth="30.0" GridPane.columnIndex="5">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets right="5.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets left="2.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="numberTextEdit42" maxHeight="-Infinity" maxWidth="-Infinity" onKeyReleased="#onNumberTextEdit" prefHeight="25.0" prefWidth="30.0" GridPane.columnIndex="6">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets right="5.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets left="2.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="numberTextEdit1" maxHeight="-Infinity" maxWidth="-Infinity" onKeyReleased="#onNumberTextEdit" prefHeight="25.0" prefWidth="30.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets right="5.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets left="2.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="numberTextEdit11" maxHeight="-Infinity" maxWidth="-Infinity" onKeyReleased="#onNumberTextEdit" prefHeight="25.0" prefWidth="30.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets right="5.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets left="2.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="numberTextEdit12" maxHeight="-Infinity" maxWidth="-Infinity" onKeyReleased="#onNumberTextEdit" prefHeight="25.0" prefWidth="30.0" GridPane.columnIndex="3" GridPane.rowIndex="2">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets right="5.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets left="2.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="numberTextEdit13" maxHeight="-Infinity" maxWidth="-Infinity" onKeyReleased="#onNumberTextEdit" prefHeight="25.0" prefWidth="30.0" GridPane.columnIndex="4" GridPane.rowIndex="2">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets right="5.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets left="2.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="numberTextEdit14" maxHeight="-Infinity" maxWidth="-Infinity" onKeyReleased="#onNumberTextEdit" prefHeight="25.0" prefWidth="30.0" GridPane.columnIndex="5" GridPane.rowIndex="2">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets right="5.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets left="2.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="numberTextEdit16" maxHeight="-Infinity" maxWidth="-Infinity" onKeyReleased="#onNumberTextEdit" prefHeight="25.0" prefWidth="30.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets right="5.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets left="2.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="numberTextEdit161" maxHeight="-Infinity" maxWidth="-Infinity" onKeyReleased="#onNumberTextEdit" prefHeight="25.0" prefWidth="30.0" GridPane.columnIndex="2" GridPane.rowIndex="4">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets right="5.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets left="2.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="numberTextEdit162" maxHeight="-Infinity" maxWidth="-Infinity" onKeyReleased="#onNumberTextEdit" prefHeight="25.0" prefWidth="30.0" GridPane.columnIndex="3" GridPane.rowIndex="4">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets right="5.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets left="2.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="numberTextEdit15" maxHeight="-Infinity" maxWidth="-Infinity" onKeyReleased="#onNumberTextEdit" prefHeight="25.0" prefWidth="30.0" GridPane.columnIndex="6" GridPane.rowIndex="2">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets right="5.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets left="2.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="numberTextEdit163" maxHeight="-Infinity" maxWidth="-Infinity" onKeyReleased="#onNumberTextEdit" prefHeight="25.0" prefWidth="30.0" GridPane.columnIndex="4" GridPane.rowIndex="4">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets right="5.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets left="2.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="numberTextEdit164" maxHeight="-Infinity" maxWidth="-Infinity" onKeyReleased="#onNumberTextEdit" prefHeight="25.0" prefWidth="30.0" GridPane.columnIndex="5" GridPane.rowIndex="4">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets right="5.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets left="2.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="numberTextEdit165" maxHeight="-Infinity" maxWidth="-Infinity" onKeyReleased="#onNumberTextEdit" prefHeight="25.0" prefWidth="30.0" GridPane.columnIndex="6" GridPane.rowIndex="4">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets right="5.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets left="2.0" />
+               </GridPane.margin>
+            </TextField>
+            <Separator style="-fx-background-color: black;" GridPane.columnIndex="1" GridPane.columnSpan="6" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets bottom="2.0" top="2.0" />
+               </GridPane.margin>
+            </Separator>
+            <Separator orientation="VERTICAL" prefWidth="6.0" style="-fx-background-color: black;" GridPane.columnIndex="7" GridPane.rowSpan="4" />
+            <TextField fx:id="numberTextEdit21" maxHeight="-Infinity" maxWidth="-Infinity" onKeyReleased="#onNumberTextEdit" prefHeight="25.0" prefWidth="30.0" GridPane.columnIndex="9">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets right="5.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets left="2.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="numberTextEdit211" maxHeight="-Infinity" maxWidth="-Infinity" onKeyReleased="#onNumberTextEdit" prefHeight="25.0" prefWidth="30.0" GridPane.columnIndex="10">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets right="5.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets left="2.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="numberTextEdit212" maxHeight="-Infinity" maxWidth="-Infinity" onKeyReleased="#onNumberTextEdit" prefHeight="25.0" prefWidth="30.0" GridPane.columnIndex="11">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets right="5.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets left="2.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="numberTextEdit213" maxHeight="-Infinity" maxWidth="-Infinity" onKeyReleased="#onNumberTextEdit" prefHeight="25.0" prefWidth="30.0" GridPane.columnIndex="12">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets right="5.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets left="2.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="numberTextEdit214" maxHeight="-Infinity" maxWidth="-Infinity" onKeyReleased="#onNumberTextEdit" prefHeight="25.0" prefWidth="30.0" GridPane.columnIndex="13">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets right="5.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets left="2.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="numberTextEdit215" maxHeight="-Infinity" maxWidth="-Infinity" onKeyReleased="#onNumberTextEdit" prefHeight="25.0" prefWidth="30.0" GridPane.columnIndex="14">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets right="5.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets left="2.0" />
+               </GridPane.margin>
+            </TextField>
+            <Separator style="-fx-background-color: black;" GridPane.columnIndex="8" GridPane.columnSpan="7" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets bottom="2.0" top="2.0" />
+               </GridPane.margin>
+            </Separator>
+            <TextField fx:id="numberTextEdit2111" maxHeight="-Infinity" maxWidth="-Infinity" onKeyReleased="#onNumberTextEdit" prefHeight="25.0" prefWidth="30.0" GridPane.columnIndex="9" GridPane.rowIndex="2">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets right="5.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets left="2.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="numberTextEdit2112" maxHeight="-Infinity" maxWidth="-Infinity" onKeyReleased="#onNumberTextEdit" prefHeight="25.0" prefWidth="30.0" GridPane.columnIndex="10" GridPane.rowIndex="2">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets right="5.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets left="2.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="numberTextEdit2113" maxHeight="-Infinity" maxWidth="-Infinity" onKeyReleased="#onNumberTextEdit" prefHeight="25.0" prefWidth="30.0" GridPane.columnIndex="11" GridPane.rowIndex="2">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets right="5.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets left="2.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="numberTextEdit21131" maxHeight="-Infinity" maxWidth="-Infinity" onKeyReleased="#onNumberTextEdit" prefHeight="25.0" prefWidth="30.0" GridPane.columnIndex="12" GridPane.rowIndex="2">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets right="5.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets left="2.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="numberTextEdit21132" maxHeight="-Infinity" maxWidth="-Infinity" onKeyReleased="#onNumberTextEdit" prefHeight="25.0" prefWidth="30.0" GridPane.columnIndex="13" GridPane.rowIndex="2">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets right="5.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets left="2.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="numberTextEdit21133" maxHeight="-Infinity" maxWidth="-Infinity" onKeyReleased="#onNumberTextEdit" prefHeight="25.0" prefWidth="30.0" GridPane.columnIndex="14" GridPane.rowIndex="2">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets right="5.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets left="2.0" />
+               </GridPane.margin>
+            </TextField>
+            <Label prefHeight="0.0" prefWidth="6.0" text="-" GridPane.rowSpan="3" GridPane.valignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="numberTextEdit5" maxHeight="-Infinity" maxWidth="-Infinity" onKeyReleased="#onNumberTextEdit" prefHeight="25.0" prefWidth="30.0" GridPane.columnIndex="9" GridPane.rowIndex="4">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets right="5.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets left="2.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="numberTextEdit51" maxHeight="-Infinity" maxWidth="-Infinity" onKeyReleased="#onNumberTextEdit" prefHeight="25.0" prefWidth="30.0" GridPane.columnIndex="10" GridPane.rowIndex="4">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets right="5.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets left="2.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="numberTextEdit52" maxHeight="-Infinity" maxWidth="-Infinity" onKeyReleased="#onNumberTextEdit" prefHeight="25.0" prefWidth="30.0" GridPane.columnIndex="11" GridPane.rowIndex="4">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets right="5.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets left="2.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="numberTextEdit53" maxHeight="-Infinity" maxWidth="-Infinity" onKeyReleased="#onNumberTextEdit" prefHeight="25.0" prefWidth="30.0" GridPane.columnIndex="12" GridPane.rowIndex="4">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets right="5.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets left="2.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="numberTextEdit54" maxHeight="-Infinity" maxWidth="-Infinity" onKeyReleased="#onNumberTextEdit" prefHeight="25.0" prefWidth="30.0" GridPane.columnIndex="13" GridPane.rowIndex="4">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets right="5.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets left="2.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="numberTextEdit55" maxHeight="-Infinity" maxWidth="-Infinity" onKeyReleased="#onNumberTextEdit" prefHeight="25.0" prefWidth="30.0" GridPane.columnIndex="14" GridPane.rowIndex="4">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets right="5.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets left="2.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="numberTextEdit57" maxHeight="-Infinity" maxWidth="-Infinity" onKeyReleased="#onNumberTextEdit" prefHeight="25.0" prefWidth="30.0" GridPane.columnIndex="9" GridPane.rowIndex="6">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets right="5.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets left="2.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="numberTextEdit58" maxHeight="-Infinity" maxWidth="-Infinity" onKeyReleased="#onNumberTextEdit" prefHeight="25.0" prefWidth="30.0" GridPane.columnIndex="10" GridPane.rowIndex="6">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets right="5.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets left="2.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="numberTextEdit59" maxHeight="-Infinity" maxWidth="-Infinity" onKeyReleased="#onNumberTextEdit" prefHeight="25.0" prefWidth="30.0" GridPane.columnIndex="11" GridPane.rowIndex="6">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets right="5.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets left="2.0" />
+               </GridPane.margin>
+            </TextField>
+            <Separator style="-fx-background-color: black;" GridPane.columnIndex="9" GridPane.columnSpan="6" GridPane.rowIndex="5">
+               <opaqueInsets>
+                  <Insets bottom="2.0" top="2.0" />
+               </opaqueInsets>
+               <GridPane.margin>
+                  <Insets bottom="2.0" top="2.0" />
+               </GridPane.margin>
+            </Separator>
+            <TextField fx:id="numberTextEdit5911" maxHeight="-Infinity" maxWidth="-Infinity" onKeyReleased="#onNumberTextEdit" prefHeight="25.0" prefWidth="30.0" GridPane.columnIndex="12" GridPane.rowIndex="6">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <GridPane.margin>
+                  <Insets left="2.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="numberTextEdit591" maxHeight="-Infinity" maxWidth="-Infinity" onKeyReleased="#onNumberTextEdit" prefHeight="25.0" prefWidth="30.0" GridPane.columnIndex="13" GridPane.rowIndex="6">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <GridPane.margin>
+                  <Insets left="2.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="numberTextEdit5912" maxHeight="-Infinity" maxWidth="-Infinity" onKeyReleased="#onNumberTextEdit" prefHeight="25.0" prefWidth="30.0" GridPane.columnIndex="14" GridPane.rowIndex="6">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <GridPane.margin>
+                  <Insets left="2.0" />
+               </GridPane.margin>
+            </TextField>
+            <Separator orientation="VERTICAL" style="-fx-background-color: black;" GridPane.columnIndex="15" GridPane.rowIndex="1" GridPane.rowSpan="4" />
+            <Label prefHeight="0.0" prefWidth="6.0" text="-" GridPane.columnIndex="8" GridPane.rowIndex="2" GridPane.rowSpan="3">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="numberTextEdit56" maxHeight="-Infinity" maxWidth="-Infinity" onKeyReleased="#onNumberTextEdit" prefHeight="25.0" prefWidth="30.0" GridPane.columnIndex="17" GridPane.rowIndex="2">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets right="5.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets left="2.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="numberTextEdit561" maxHeight="-Infinity" maxWidth="-Infinity" onKeyReleased="#onNumberTextEdit" prefHeight="25.0" prefWidth="30.0" GridPane.columnIndex="18" GridPane.rowIndex="2">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets right="5.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets left="2.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="numberTextEdit211331" maxHeight="-Infinity" maxWidth="-Infinity" onKeyReleased="#onNumberTextEdit" prefHeight="25.0" prefWidth="30.0" GridPane.columnIndex="19" GridPane.rowIndex="2">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets right="5.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets left="2.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="numberTextEdit21111" maxHeight="-Infinity" maxWidth="-Infinity" onKeyReleased="#onNumberTextEdit" prefHeight="25.0" prefWidth="30.0" GridPane.columnIndex="20" GridPane.rowIndex="2">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets right="5.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets left="2.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="numberTextEdit562" maxHeight="-Infinity" maxWidth="-Infinity" onKeyReleased="#onNumberTextEdit" prefHeight="25.0" prefWidth="30.0" GridPane.columnIndex="21" GridPane.rowIndex="2">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets right="5.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets left="2.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="numberTextEdit563" maxHeight="-Infinity" maxWidth="-Infinity" onKeyReleased="#onNumberTextEdit" prefHeight="25.0" prefWidth="30.0" GridPane.columnIndex="22" GridPane.rowIndex="2">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets right="5.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets left="2.0" />
+               </GridPane.margin>
+            </TextField>
+            <Label prefHeight="0.0" prefWidth="6.0" text="-" GridPane.columnIndex="16" GridPane.rowIndex="4" GridPane.rowSpan="3">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Separator style="-fx-background-color: black;" GridPane.columnIndex="16" GridPane.columnSpan="7" GridPane.rowIndex="3" />
+            <TextField fx:id="numberTextEdit564" maxHeight="-Infinity" maxWidth="-Infinity" onKeyReleased="#onNumberTextEdit" prefHeight="25.0" prefWidth="30.0" GridPane.columnIndex="17" GridPane.rowIndex="4">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets right="5.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets left="2.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="numberTextEdit5641" maxHeight="-Infinity" maxWidth="-Infinity" onKeyReleased="#onNumberTextEdit" prefHeight="25.0" prefWidth="30.0" GridPane.columnIndex="18" GridPane.rowIndex="4">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets right="5.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets left="2.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="numberTextEdit56411" maxHeight="-Infinity" maxWidth="-Infinity" onKeyReleased="#onNumberTextEdit" prefHeight="25.0" prefWidth="30.0" GridPane.columnIndex="19" GridPane.rowIndex="4">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets right="5.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets left="2.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="numberTextEdit564111" maxHeight="-Infinity" maxWidth="-Infinity" onKeyReleased="#onNumberTextEdit" prefHeight="25.0" prefWidth="30.0" GridPane.columnIndex="20" GridPane.rowIndex="4">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets right="5.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets left="2.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="numberTextEdit5641111" maxHeight="-Infinity" maxWidth="-Infinity" onKeyReleased="#onNumberTextEdit" prefHeight="25.0" prefWidth="30.0" GridPane.columnIndex="21" GridPane.rowIndex="4">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets right="5.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets left="2.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="numberTextEdit56411111" maxHeight="-Infinity" maxWidth="-Infinity" onKeyReleased="#onNumberTextEdit" prefHeight="25.0" prefWidth="30.0" GridPane.columnIndex="22" GridPane.rowIndex="4">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets right="5.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets left="2.0" />
+               </GridPane.margin>
+            </TextField>
+            <Button mnemonicParsing="false" text="+" GridPane.columnIndex="22" GridPane.rowIndex="6">
+               <GridPane.margin>
+                  <Insets left="2.0" />
+               </GridPane.margin>
+            </Button>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
